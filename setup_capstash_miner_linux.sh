@@ -53,7 +53,7 @@ echo -e "${GREEN}✓ Install directory ready${RESET}"
 
 # ── Step 4: Download pre-compiled binary ──────────────────────────────────
 echo -e "${AMBER}[4/6] Downloading capstash-miner v${MINER_VERSION} binary...${RESET}"
-BINARY_URL="https://github.com/scratcher14/capstash-miner-linux/releases/download/v${MINER_VERSION}/capstash-miner-linux-x86_64"
+BINARY_URL="https://github.com/scratcher14/capstash-miner-linux/releases/download/v${MINER_VERSION}/capstash-miner"
 curl -fsSL "$BINARY_URL" -o "$INSTALL_DIR/capstash-miner"
 chmod +x "$INSTALL_DIR/capstash-miner"
 echo -e "${GREEN}✓ Binary downloaded${RESET}"
