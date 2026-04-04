@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 # ============================================================
 #  CapStash Miner v4.20.69 — Reconfiguration Menu
 # ============================================================
@@ -220,7 +220,7 @@ EOF
 # ── Rewrite start.sh ──────────────────────────────────────────────────────
 if [ "$MINING_MODE" = "solo" ]; then
 cat > "$INSTALL_DIR/start.sh" << EOF
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 cd "$INSTALL_DIR"
 echo ""
 echo -e "\033[38;5;82m[capstash-miner] Starting solo mining...\033[0m"
@@ -237,7 +237,7 @@ echo ""
 EOF
 else
 cat > "$INSTALL_DIR/start.sh" << EOF
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 cd "$INSTALL_DIR"
 echo ""
 echo -e "\033[38;5;82m[capstash-miner] Starting pool mining...\033[0m"
