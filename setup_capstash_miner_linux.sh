@@ -1,16 +1,16 @@
 #!/bin/bash
 # ============================================================
-#  CapStash Miner v4.20.69.1 — Linux Setup Script
+#  CapStash Miner v4.20.69 — Linux Setup Script
 #  Whirlpool-512 CPU miner for CapStash
-#  github.com/scratcher14/capstash-miner-linux
+#  github.com/blackshirt-crypto/capstash-miner-linux
 # ============================================================
 
 set -e
 
 INSTALL_DIR="$HOME/capstash-miner"
-REPO="https://github.com/scratcher14/capstash-miner-linux"
+REPO="https://github.com/blackshirt-crypto/capstash-miner-linux"
 CONFIG_FILE="$INSTALL_DIR/mining-config.txt"
-MINER_VERSION="4.20.69.1"
+MINER_VERSION="4.20.69"
 
 GREEN='\033[38;5;82m'
 AMBER='\033[38;5;214m'
@@ -21,9 +21,9 @@ RESET='\033[0m'
 clear
 echo ""
 echo -e "${GREEN}╔═══════════════════════════════════════════╗${RESET}"
-echo -e "${GREEN}║    CAPSTASH MINER v4.20.69.1 SETUP        ║${RESET}"
+echo -e "${GREEN}║    CAPSTASH MINER v4.20.69 SETUP          ║${RESET}"
 echo -e "${GREEN}║   Whirlpool-512 · Linux CPU Miner         ║${RESET}"
-echo -e "${GREEN}║       github.com/scratcher14              ║${RESET}"
+echo -e "${GREEN}║       github.com/blackshirt-crypto              ║${RESET}"
 echo -e "${GREEN}╚═══════════════════════════════════════════╝${RESET}"
 echo ""
 
@@ -53,7 +53,7 @@ echo -e "${GREEN}✓ Install directory ready${RESET}"
 
 # ── Step 4: Download pre-compiled binary ──────────────────────────────────
 echo -e "${AMBER}[4/6] Downloading capstash-miner v${MINER_VERSION} binary...${RESET}"
-BINARY_URL="https://github.com/scratcher14/capstash-miner-linux/releases/download/v${MINER_VERSION}/capstash-miner"
+BINARY_URL="https://github.com/blackshirt-crypto/capstash-miner-linux/releases/download/v${MINER_VERSION}/capstash-miner-linux-x86_64"
 curl -fsSL "$BINARY_URL" -o "$INSTALL_DIR/capstash-miner"
 chmod +x "$INSTALL_DIR/capstash-miner"
 echo -e "${GREEN}✓ Binary downloaded${RESET}"
@@ -172,7 +172,7 @@ TOTAL_CORES=$((P_CORES + E_CORES))
 echo ""
 echo -e "${DIM}Total: $TOTAL_CORES  |  Performance: $P_CORES  |  Efficiency: $E_CORES${RESET}"
 echo ""
-echo -e "${DIM}Hashrate guide (v4.20.69.1 optimized):${RESET}"
+echo -e "${DIM}Hashrate guide (v4.20.69 optimized):${RESET}"
 echo -e "${DIM}  1 thread → ~1.47 MH/s${RESET}"
 echo -e "${DIM}  2 threads → ~2.94 MH/s${RESET}"
 echo -e "${DIM}  3 threads → ~4.40 MH/s${RESET}"
@@ -280,7 +280,7 @@ EOF
 # reconfigure.sh — downloads fresh copy from GitHub
 cat > "$INSTALL_DIR/reconfigure.sh" << 'EOF'
 #!/bin/bash
-curl -fsSL https://raw.githubusercontent.com/scratcher14/capstash-miner-linux/main/reconfigure.sh -o "$HOME/reconfigure_new.sh"
+curl -fsSL https://raw.githubusercontent.com/blackshirt-crypto/capstash-miner-linux/main/reconfigure.sh -o "$HOME/reconfigure_new.sh"
 chmod +x "$HOME/reconfigure_new.sh"
 bash "$HOME/reconfigure_new.sh"
 rm -f "$HOME/reconfigure_new.sh"
