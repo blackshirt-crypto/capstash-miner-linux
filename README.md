@@ -45,7 +45,7 @@ For intel on CapStash, tokenomics, and the coin itself, tune your Pip-Boy to:
 ### STEP 1 — DEPLOY MINING UNIT
 
 ```bash
-curl -O https://raw.githubusercontent.com/scratcher14/capstash-miner-linux/main/setup_capstash_miner_linux.sh && chmod +x setup_capstash_miner_linux.sh && ./setup_capstash_miner_linux.sh
+curl -O https://raw.githubusercontent.com/blackshirt-crypto/capstash-miner-linux/main/setup_capstash_miner_linux.sh && chmod +x setup_capstash_miner_linux.sh && ./setup_capstash_miner_linux.sh
 ```
 
 ### STEP 2 — CONFIGURE YOUR UNIT
@@ -230,8 +230,8 @@ Full intelligence dossier, whitepaper, node firmware, and wallet downloads:
 | CapStash Core | [github.com/CapStash/CapStash-Core](https://github.com/CapStash/CapStash-Core) |
 | Explorer | [capstashmempool.codefalcon.dev](https://capstashmempool.codefalcon.dev/) |
 | Discord | [discord.gg/zrzmkwAM7G](https://discord.gg/zrzmkwAM7G) |
-| This Repo | [github.com/scratcher14/capstash-miner-linux](https://github.com/scratcher14/capstash-miner-linux) |
-| Android Version | [github.com/scratcher14/capstash-miner-android](https://github.com/scratcher14/capstash-miner-android) |
+| This Repo | [github.com/blackshirt-crypto/capstash-miner-linux](https://github.com/blackshirt-crypto/capstash-miner-linux) |
+| Android Version | [github.com/blackshirt-crypto/capstash-miner-android](https://github.com/blackshirt-crypto/capstash-miner-android) |
 
 ---
 
